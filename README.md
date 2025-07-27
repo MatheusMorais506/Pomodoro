@@ -8,7 +8,7 @@ O objetivo é ajudar os usuários a aumentar a produtividade registrando seus ci
 
 ## Hospedagem
 
-https://pomodoro-timer.vercel.app/
+https://pomodoro-beta.vercel.app/
 
 ---
 
