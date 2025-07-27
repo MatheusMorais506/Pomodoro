@@ -1,67 +1,65 @@
-# Build do projeto
+# ✅ Pomodoro
 
-- npm run build (gerar pasta dist)
-- npm run preview (testa o projeto buildado)
+Técnica de pomodoro
+Uma aplicação intuitiva desenvolvida em **React** para gerenciar ciclos de foco e pausa utilizando a técnica de Pomodoro.  
+O objetivo é ajudar os usuários a aumentar a produtividade registrando seus ciclos concluídos, com opções de personalização de tempo e tema.
 
-# React + TypeScript + Vite
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and
-some ESLint rules.
+## Hospedagem
 
-Currently, two official plugins are available:
+https://pomodoro-timer.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
-  uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)
-  uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+<img width="1576" height="907" alt="pomodoro" src="https://github.com/user-attachments/assets/1fc22a24-990f-4600-b5ab-bbc02d05e4e8" />
 
-If you are developing a production application, we recommend updating the
-configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+## 🚀 Funcionalidades
 
-You can also install
-[eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x)
-and
-[eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom)
-for React-specific lint rules:
+- **Cronômetro Pomodoro:**  
+  Permite iniciar, e parar ciclos de foco e descanso.  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
+- **Histórico de Ciclos:**  
+  Armazena localmente (LocalStorage) os ciclos.  
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
-```
+- **Configuração de Tempo Personalizável:**  
+  O usuário pode definir o tempo de foco, descanso curto e descanso longo diretamente na interface.  
+
+- **Tema Escuro e Claro:**  
+  Alternância dinâmica entre tema escuro e claro, com preferência salva no navegador.  
+
+- **Interface Responsiva:**  
+  Layout adaptado para desktop, tablet e celular.  
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+- **React:** Biblioteca principal para construção da interface.  
+- **JavaScript (ES6+):** Controle do estado do cronômetro, histórico e configuração.  
+- **Context API / Reducer:** Gerenciamento de estado global (ciclos e tema).  
+- **LocalStorage:** Persistência do histórico e das configurações do usuário.  
+- **CSS / Styled Components:** Estilização da aplicação com suporte a tema escuro e claro.  
+
+---
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas!  
+Você pode abrir *issues* para sugerir melhorias ou reportar bugs.
+
+### Como Contribuir
+1. Faça um fork do repositório.  
+2. Crie uma branch com sua feature: `git checkout -b minha-feature`  
+3. Commit suas mudanças: `git commit -m 'Minha feature'`  
+4. Envie para o repositório remoto: `git push origin minha-feature`  
+5. Abra um Pull Request.  
+
+---
+
+## 📜 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
